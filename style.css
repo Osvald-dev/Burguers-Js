@@ -1,0 +1,322 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+body{
+    background-color: rgb(0, 0, 0);
+}
+.contenedor-divs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.div-cards{
+    display:flex;
+    flex-wrap: wrap;
+    flex-grow: 2;
+    justify-content: center;
+    margin: 1rem .6rem;
+    text-align: center;
+}
+
+.card-productos{
+    background-color: black;
+    background-position: center;
+    background-size: contain;
+    width: 40%;
+    min-height: 10rem;
+    border: 2px rgb(156, 89, 0) solid ;
+    border-radius: 5px 10px;
+    margin-bottom: 1rem;
+    margin-right: 1.6rem;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card-productos:hover{
+    border: 2px rgb(255, 72, 0) solid ;
+}
+
+.card-nombre{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(255, 255, 255);
+    font-weight: 800;
+    letter-spacing: 0.3rem;
+    font-size: 3rem;
+    text-align: center;
+}
+.img-burger{
+    width: 55%;
+    border-radius: 5%;
+
+}
+.card-precio{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    font-size: 2rem;
+}
+.card-fijo{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: aliceblue;
+}
+.btn-agregar{
+    border:none;
+    border-radius: .3rem;
+    color: white;
+    background-color: rgb(255, 115, 0);
+    padding: 1rem 2rem;
+    margin-top: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    width: inherit;
+    font-size: 16px;
+    
+}
+.btn-agregar:hover{
+    background-color: rgb(255, 156, 74);
+}
+
+.carrito-cards{
+    border:none;
+    border-radius: .5rem;
+    color: black;
+    background-color: rgb(186, 247, 125);
+    font-weight: 400;
+    padding: 1.5rem 2rem;
+    margin-top: 25px;
+    margin-right: 8px;
+    margin-bottom: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    font-size: 1.1rem;
+    
+}
+.carrito-cards:hover{
+    background-color: rgb(151, 255, 47);
+}
+
+.verCarro{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.seleccionUsuario{
+    background-color: rgb(0, 0, 0);
+    font-size: 1.5rem;
+    text-align: center;
+    width: 40%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#lista-seleccion{
+    color: aliceblue;
+}
+.cantidadSeleccionada{
+    background-color: rgb(0, 0, 0);
+    font-size: 2rem;
+    color:rgba(255, 123, 0, 0.767);
+    width: 40%;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+.total{
+    display: flex;
+    justify-content: center;
+    background-color: cadetblue;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(8, 10, 139);
+    font-size: 2rem;
+}
+
+.div-formulario{
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+.boton-cards{
+    display: flex;
+    justify-content: center;
+}
+.inputs{
+    padding: 12px 20px;
+    border-radius: 10px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.h4-pedido{
+    font-size: 2rem;
+    color:rgb(255, 115, 0);
+    line-height: normal;
+}
+.formulario-pedido{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: 50%;
+    margin-bottom: 5rem;
+}
+.inputs-btn{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(205, 143, 50);
+    align-items: center;
+    font-weight: 600;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.6rem;
+    width: 55%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+#font-cantidad{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:rgb(97, 0, 253) ;
+    font-weight: 700;
+    font-size: 1rem;
+}
+.card-cantidad{
+    color: rgb(214, 214, 214);
+    font-weight: 500;
+    text-align: center;
+    border: none;
+    font-size: 2rem;
+    background-color: rgba(255, 123, 0, 0.767);
+    margin-top: 10px;
+}
+.aviso{
+    color: red;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* Style header*/
+.invisible {
+left: -999px;
+overflow: hidden;
+position: absolute;
+top: -999px;
+}
+
+.align {
+display: grid;
+place-items: center;
+}
+
+a {
+color: inherit;
+outline: 0;
+}
+
+/* modules/icon.css */
+
+.icons {
+display: none;
+}
+
+.icon {
+block-size: 1em;
+display: inline-block;
+fill: currentcolor;
+inline-size: 1em;
+vertical-align: middle;
+}
+
+.icon--2x {
+font-size: 2rem;
+}
+
+/* modules/image.css */
+
+svg {
+max-inline-size: 100%;
+}
+
+/* modules/navigation.css */
+
+:root {
+--navigation-background-color: #f0f6ff;
+--navigation-border-radius: 0.25em;
+
+--navigation-anchor-padding: 1.5em;
+}
+
+.navigation {
+background-color: var(--navigation-background-color);
+border-radius: var(--navigation-border-radius);
+box-shadow: 0 0.5em 1em rgba(255, 123, 0, 0.767);
+}
+
+.navigation ul {
+list-style: none;
+margin: 0;
+padding: 0;
+}
+
+.navigation a {
+display: block;
+padding: var(--navigation-anchor-padding);
+position: relative;
+text-decoration: none;
+}
+
+.navigation a:focus::after,
+.navigation a:hover::after {
+opacity: 1;
+}
+
+.navigation a::after {
+block-size: 100%;
+box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.3);
+content: '';
+inline-size: 100%;
+left: 0;
+opacity: 0;
+position: absolute;
+top: 0;
+transition: opacity 0.3s;
+}
+
+.navigation--inline ul {
+display: flex;
+justify-content: end;
+background-color: rgb(255, 115, 0);
+
+}
+.section-ticket{
+    padding-top: 2rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.h1-ticket{
+    color: rgba(255, 174, 97, 0.767);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#ticket{
+    padding:2rem;
+    display: flex;
+    flex-direction: column;
+    border:solid 2px white;
+    color: rgba(255, 123, 0, 0.767);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.lista-productos, #total, #totalDolar, #destinatario{
+    list-style: none;
+    font-size: 1.5rem;
+    color: rgb(238, 241, 24);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
